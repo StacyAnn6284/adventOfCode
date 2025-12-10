@@ -1,6 +1,9 @@
-import { lines } from "./numbers.js";
+import fs from "fs/promises";
 
-function doTheThing(numbers) {
+const fileContents = await fs.readFile("./numbers.txt", "utf-8");
+const lines = fileContents.trim().split("\n");
+
+function badElvesday1(numbers: string | any[]) {
   let startingPoint = 50;
   let zeroCount = 0;
   for (let i = 0; i < numbers.length; i++) {
@@ -20,4 +23,4 @@ function doTheThing(numbers) {
   console.log(zeroCount);
 }
 
-doTheThing(lines);
+badElvesday1(lines);

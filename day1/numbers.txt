@@ -1,4 +1,3 @@
-const input = `
 L25
 L8
 L44
@@ -4663,7 +4662,3 @@ L15
 R20
 R45
 R39
-`;
-
-export const lines = input.trim().split("\n");
-console.log(lines[2]);

@@ -41,7 +41,7 @@ function badElfday2(idsToCheck) {
     let numbers = idsToCheck[i].split("-");
     let firstId = Number(numbers[0]);
     let lastId = Number(numbers[1]);
-    j = firstId;
+    let j = firstId;
     while (j <= lastId) {
       fullArrayofIds.push(j);
       j++;
@@ -60,7 +60,7 @@ function badElfday2(idsToCheck) {
       finalNumber += numberToTest;
     }
   }
-  return finalNumber;
+  console.log(finalNumber);
 }
 
 badElfday2(myInput);
